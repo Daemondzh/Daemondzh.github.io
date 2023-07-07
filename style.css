@@ -29,18 +29,30 @@ section {
 }
 
 #contact-sections {
-    display: flex;  /* Set the #contact-sections div as a flex container */
-    justify-content: space-around;  /* Space sections equally */
-    flex-wrap: wrap;  /* Wrap content for smaller screens */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;  /* Set a max-width for larger screens */
+    width: 100%;  /* Ensure full width on smaller screens */
+    padding: 20px;
 }
 
 #contact-me, #contact {
-    flex: 1 1 400px;  /* Give each section a flexible basis of 400px */
-    margin: 10px;  /* Give each section a bit of margin */
-    max-width: 600px;  /* Set max width to maintain a readable line length */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 400px;
+    max-width: 600px;
+    box-sizing: border-box;  /* Include padding and border in element's total width and height */
 }
 
-/* existing styles below */
+#contact-me h2, #contact h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #007BFF;
+}
 
 #contact-me .form-group {
     margin-bottom: 15px;
@@ -57,6 +69,7 @@ section {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 1em;
 }
 
 #contact-me button {
@@ -66,17 +79,11 @@ section {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 #contact-me button:hover {
     background-color: #45a049;
-}
-
-#contact {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .contact-card {
@@ -85,12 +92,14 @@ section {
 
 .contact-card h3 {
     margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 1.4em;
+    color: #333;
 }
 
 .contact-card p {
     margin-bottom: 10px;
     line-height: 1.6;
+    font-size: 1em;
 }
 
 .contact-card a {
@@ -103,6 +112,13 @@ section {
     color: #0056b3;
     text-decoration: underline;
 }
+
+/* Add styles for placeholders */
+#contact-me input::placeholder, #contact-me textarea::placeholder {
+    color: #999;
+    font-size: 0.95em;
+}
+
 
 
 #todo {
