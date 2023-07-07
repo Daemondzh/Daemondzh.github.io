@@ -7,3 +7,8 @@ document.getElementById('todo-submit').addEventListener('click', function() {
         document.getElementById('todo-input').value = '';
     }
 });
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('form-message').style.display = 'block';
+});
