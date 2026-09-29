@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { videos } from '../../data/site';
+---
+
+<BaseLayout
+  title="Videos — Daemond Zhang"
+  description="Videos, talks, performances, and other visual work by Daemond Zhang."
+>
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <p class="kicker">Videos</p>
+        <h1>Videos</h1>
+
+        <p class="lede">
+          A collection of talks, explanations, performances, and other
+          things I have recorded.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container video-list">
+        {
+          videos.map((video) => (
+            <article class="video-card">
+
+              <div class="video-embed">
+                <iframe
+                  src={video.embedUrl}
+                  title={video.title}
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                />
+              </div>
+
+              <div class="video-info">
+                <div class="video-meta">
+                  <span>{video.type}</span>
+                  <span>{video.date}</span>
+                </div>
+
+                <h2>{video.title}</h2>
+
+                <p>
+                  {video.description}
+                </p>
+
+                <a
+                  class="text-link"
+                  href={video.watchUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Watch video ↗
+                </a>
+              </div>
+
+            </article>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</BaseLayout>

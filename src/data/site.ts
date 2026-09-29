@@ -1,6 +1,6 @@
 export const site = {
   name: 'Daemond Zhang',
-  title: 'Daemond Zhang — Physics at MIT',
+  title: 'Daemond Zhang — A personal website',
   description:
     'Daemond Zhang is a PhD student in physics at MIT, interested in theoretical physics, quantum gravity, holography, and related questions.',
   affiliation: 'PhD student in Physics · MIT Center for Theoretical Physics',
@@ -12,6 +12,7 @@ export const site = {
   nav: [
     { label: 'Research', href: '/research/' },
     { label: 'Writing', href: '/writing/' },
+    { label: 'Visuals', href: '/videos/'},
     { label: 'About', href: '/about/' },
     { label: 'CV', href: '/about/#cv' },
   ],
@@ -47,5 +48,27 @@ export const writing = [
     date: '2024-02-24',
     href: '/2024/02/24/hello-world/',
     description: 'The original Hexo starter post, preserved so the old URL does not break.',
+  },
+];
+
+export const videos = [
+  {
+    title: 'My First Video',
+    date: '2026',
+    type: 'Physics',
+    description:
+      'A short introduction to this video. Here I discuss the main idea, why I made it, and what I found interesting about the topic.',
+    watchUrl: 'https://www.bilibili.com/video/BV1qrKhz7E1G',
+    embedUrl: 'https://player.bilibili.com/player.html?bvid=BV1qrKhz7E1G',
+  },
+
+  {
+    title: 'Another Video',
+    date: '2025',
+    type: 'Music',
+    description:
+      'A personal performance and some notes about the piece, recording, and context.',
+    watchUrl: 'https://www.bilibili.com/video/BV1qrKhz7E1G',
+    embedUrl: 'https://player.bilibili.com/player.html?bvid=BV1qrKhz7E1G',
   },
 ];
