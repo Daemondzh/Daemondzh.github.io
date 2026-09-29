@@ -1,0 +1,16 @@
+---
+import { site } from '../data/site';
+---
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-name">{site.name}</div>
+      <div class="muted">{site.affiliation}</div>
+    </div>
+    <div class="footer-links">
+      <a href={site.github} target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href="/about/#contact">Contact</a>
+    </div>
+  </div>
+</footer>

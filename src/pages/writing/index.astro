@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { writing } from '../../data/site';
+---
+
+<BaseLayout title="Writing — Daemond Zhang" description="Notes and writing by Daemond Zhang.">
+  <section class="page-header container narrow">
+    <div class="eyebrow">WRITING</div>
+    <h1>Notes, essays, and occasional detours.</h1>
+    <p class="lede">
+      This can hold physics notes, longer essays, reading notes, or anything that does not belong on the research page.
+    </p>
+  </section>
+
+  <section class="section container narrow">
+    <div class="writing-list writing-list-large">
+      {writing.map((item) => (
+        <a class="writing-row" href={item.href}>
+          <span>
+            <strong>{item.title}</strong>
+            <small>{item.description}</small>
+          </span>
+          <time datetime={item.date}>{item.date}</time>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section container narrow note-block">
+    <div class="kicker">Adding a new post</div>
+    <p>
+      Create a Markdown file such as <code>src/pages/writing/my-note.md</code>, then add one line for it to the
+      <code>writing</code> list in <code>src/data/site.ts</code> so it appears in this index.
+    </p>
+  </section>
+</BaseLayout>
