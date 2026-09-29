@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { site } from '../../data/site';
+---
+
+<BaseLayout title="About — Daemond Zhang" description="About Daemond Zhang, a physics PhD student at MIT.">
+  <section class="page-header container narrow">
+    <div class="eyebrow">ABOUT</div>
+    <h1>Daemond Zhang</h1>
+    <p class="lede">{site.affiliation}</p>
+  </section>
+
+  <section class="prose container narrow">
+    <p>
+      I was born and raised in Hangzhou, China. I studied mathematics and physics at Tsinghua University in Beijing,
+      and spent time at New College, University of Oxford as a visiting student in physics.
+    </p>
+
+    <p>
+      At Tsinghua, I worked on holography and entanglement with Prof. Bartek Czech's group.
+      I later spent a summer at UC Santa Barbara exploring gravitational path integrals and operator algebras
+      with Prof. Donald Marolf and other undergraduate research fellows.
+    </p>
+
+    <p>
+      I began my PhD in physics at the MIT Center for Theoretical Physics in 2024.
+      Outside physics, I am interested in music, fiction, languages, artificial intelligence, and the occasional impractical idea.
+    </p>
+
+    <h2 id="cv">CV</h2>
+    <p>
+      Add your CV as <code>public/cv.pdf</code>, then change <code>cvUrl</code> in <code>src/data/site.ts</code> to <code>/cv.pdf</code>.
+    </p>
+
+    <h2 id="contact">Contact</h2>
+    <p>
+      Add your preferred email address here. I have intentionally left it out of the template rather than guessing it.
+      You can edit this paragraph directly in <code>src/pages/about/index.astro</code>.
+    </p>
+
+    <p>
+      <a href={site.github} target="_blank" rel="noreferrer">GitHub ↗</a>
+    </p>
+  </section>
+</BaseLayout>

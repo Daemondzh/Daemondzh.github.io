@@ -1,0 +1,30 @@
+---
+interface LinkItem {
+  label: string;
+  href: string;
+}
+
+interface Props {
+  number: string;
+  title: string;
+  description: string;
+  links?: LinkItem[];
+}
+
+const { number, title, description, links = [] } = Astro.props;
+---
+
+<article class="research-item">
+  <div class="research-number">{number}</div>
+  <div>
+    <h3>{title}</h3>
+    <p>{description}</p>
+    {links.length > 0 && (
+      <div class="inline-links">
+        {links.map((link) => (
+          <a href={link.href} target="_blank" rel="noreferrer">{link.label} ↗</a>
+        ))}
+      </div>
+    )}
+  </div>
+</article>

@@ -1,0 +1,14 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+const { frontmatter } = Astro.props;
+const title = frontmatter?.title ? `${frontmatter.title} — Daemond Zhang` : 'Daemond Zhang';
+const description = frontmatter?.description ?? 'Writing by Daemond Zhang.';
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="article container narrow">
+    {frontmatter?.date && <div class="eyebrow">{frontmatter.date}</div>}
+    <slot />
+  </article>
+</BaseLayout>

@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { writing } from '../../data/site';
+---
+
+<BaseLayout title="Archives — Daemond Zhang">
+  <section class="page-header container narrow">
+    <div class="eyebrow">ARCHIVE</div>
+    <h1>Writing archive</h1>
+    <p class="lede">This route is kept for compatibility with the old Hexo site.</p>
+  </section>
+
+  <section class="section container narrow">
+    <div class="writing-list">
+      {writing.map((item) => (
+        <a class="writing-row" href={item.href}>
+          <span>{item.title}</span>
+          <time datetime={item.date}>{item.date}</time>
+        </a>
+      ))}
+    </div>
+    <p class="muted top-space">New writing lives at <a href="/writing/">/writing/</a>.</p>
+  </section>
+</BaseLayout>

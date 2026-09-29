@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ResearchItem from '../../components/ResearchItem.astro';
+import { research } from '../../data/site';
+---
+
+<BaseLayout title="Research — Daemond Zhang" description="Research interests and projects by Daemond Zhang.">
+  <section class="page-header container narrow">
+    <div class="eyebrow">RESEARCH</div>
+    <h1>Questions I work on.</h1>
+    <p class="lede">
+      My interests center on quantum gravity, holography, entanglement, and the structures that connect quantum theory to spacetime.
+    </p>
+  </section>
+
+  <section class="section container narrow">
+    <div class="research-list">
+      {research.map((item) => <ResearchItem {...item} />)}
+    </div>
+  </section>
+
+  <section class="section container narrow note-block">
+    <div class="kicker">How to edit this page</div>
+    <p>
+      Add papers, projects, arXiv links, collaborators, or notes by editing <code>src/data/site.ts</code>.
+      Each research item already supports a small list of links.
+    </p>
+  </section>
+</BaseLayout>
