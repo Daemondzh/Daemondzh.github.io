@@ -53,11 +53,11 @@ export const writing = [
 
 export const videos = [
   {
-    title: 'My First Video',
-    date: '2026',
-    type: 'Physics',
+    title: 'A series of lectures on classical theory of magnetism',
+    date: '2025',
+    type: 'Mandarin',
     description:
-      'A short introduction to this video. Here I discuss the main idea, why I made it, and what I found interesting about the topic.',
+      'For Mandarin speakers, here is a series of fifteen lectures where I introduced the historical attempts towards a theory of paramagnetism, diamagnetism and ferromagnetism within the framework of classical statistical mechanics. I ended at the famous Bohr-van Leeuwen theorem that renders all pre-quantum attempts obsolete.',
     watchUrl: 'https://www.bilibili.com/video/BV1qrKhz7E1G',
     embedUrl: 'https://player.bilibili.com/player.html?bvid=BV1qrKhz7E1G',
   },
