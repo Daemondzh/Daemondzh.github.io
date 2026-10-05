@@ -53,9 +53,29 @@ export const writing = [
 
 export const videos = [
   {
+    title: 'A pedagogical presentation on 3d gravity',
+    date: '2025',
+    type: 'Talks',
+    description:
+      'This is a short introduction to the formulation of 3d Einstein gravity classically as Chern-Simons theory. It was intended for the final presentation of the course 8.325 in 2025, and was designed to be detailed and pedagogical.',
+    watchUrl: 'https://www.bilibili.com/video/BV1PaVWzdEPM',
+    embedUrl: 'https://player.bilibili.com/player.html?bvid=BV1PaVWzdEPM',
+  },
+
+  {
+    title: 'Recitations on quantum field theory',
+    date: '2026',
+    type: 'Pedogogy',
+    description:
+      'This is a collection of recitations I gave for 8.324 on various topics related to quantum field theory, as well as an incomplete presentation on CPT theorem.',
+    watchUrl: 'https://www.bilibili.com/video/BV1F1eM65EPo',
+    embedUrl: 'https://player.bilibili.com/player.html?bvid=BV1F1eM65EPo',
+  },
+
+  {
     title: 'A series of lectures on classical theory of magnetism',
     date: '2025',
-    type: 'Mandarin',
+    type: 'Pedogogy',
     description:
       'For Mandarin speakers, here is a series of fifteen lectures where I introduced the historical attempts towards a theory of paramagnetism, diamagnetism and ferromagnetism within the framework of classical statistical mechanics. I ended at the famous Bohr-van Leeuwen theorem that renders all pre-quantum attempts obsolete.',
     watchUrl: 'https://www.bilibili.com/video/BV1qrKhz7E1G',
@@ -63,12 +83,12 @@ export const videos = [
   },
 
   {
-    title: 'Another Video',
+    title: 'History of physics on magnetism',
     date: '2025',
-    type: 'Music',
+    type: 'Pedogogy',
     description:
-      'A personal performance and some notes about the piece, recording, and context.',
-    watchUrl: 'https://www.bilibili.com/video/BV1qrKhz7E1G',
-    embedUrl: 'https://player.bilibili.com/player.html?bvid=BV1qrKhz7E1G',
-  },
+      'For Mandarin speakers, I made this video as a complement to the lectures on theory of magnetism, where I provided the historical context of those formalisms. Unlike the usual narrative of the history in popular science, I put my emphasis on the sociological background of physics research and education in late 19th century France and how physcists survived academia back then.',
+    watchUrl: 'https://www.bilibili.com/video/BV1GBvKz5EZt',
+    embedUrl: 'https://player.bilibili.com/player.html?bvid=BV1GBvKz5EZt',
+  }
 ];
